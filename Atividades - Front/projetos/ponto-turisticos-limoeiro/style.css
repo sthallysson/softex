@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  height: 150px;
+  background-color: #ce2b2b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+header span {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main p {
+  max-width: 50%;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+  padding-block: 40px;
+  margin-top: 2rem;
+}
