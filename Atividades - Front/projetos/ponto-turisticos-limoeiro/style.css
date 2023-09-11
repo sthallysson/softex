@@ -12,14 +12,26 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
+  padding-inline: 2rem;
 }
 
-header span {
+header .logo {
   font-size: 2rem;
   text-transform: capitalize;
   color: #fff;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+header a:not(.logo):hover {
+  color: rgb(0, 0, 0);
 }
 
 main {
@@ -28,8 +40,18 @@ main {
   align-items: center;
   gap: 1rem;
 }
-main p {
+main > p {
   max-width: 50%;
+}
+
+main article {
+  display: flex;
+  margin-inline: 2rem;
+  gap: 2rem;
+}
+
+main article h2 {
+  margin-bottom: 1rem;
 }
 
 footer {
