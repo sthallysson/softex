@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header-content">
-        <a href="#" class="avatar">
+        <a href="#home" class="avatar">
           <img src="https://github.com/sthallysson.png" alt="#" />
           <h1>thallysson</h1>
         </a>
@@ -20,9 +20,9 @@
             <span class="hamburguer"></span>
           </button>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -41,6 +41,7 @@
           <a href="#projects" class="button">Projects</a>
         </div>
       </section>
+
       <section id="about" class="section">
         <div class="about-content">
           <section>
@@ -53,23 +54,133 @@
               error animi labore laudantium?
             </p>
           </section>
-          <section>
-            <h3>Get to know me!</h3>
-            <p class="left">
-              Hey! It's John Doe and I'm a Frontend Web Developer located in Los
-              Angeles. I've done remote projects for agencies, consulted for
-              startups, and collaborated with talented people to create digital
-              products for both business and consumer use.
-            </p>
-            <p class="left">
-              I'm a bit of a digital product junky. Over the years, I've used
-              hundreds of web and mobile apps in different industries and
-              verticals. Feel free to contact me here.
-            </p>
+          <div class="contact-skills">
+            <section class="contact">
+              <h3>Get to know me!</h3>
+              <p class="left">
+                Hey! It's John Doe and I'm a Frontend Web Developer located in
+                Los Angeles. I've done remote projects for agencies, consulted
+                for startups, and collaborated with talented people to create
+                digital products for both business and consumer use.
+              </p>
+              <p class="left">
+                I'm a bit of a digital product junky. Over the years, I've used
+                hundreds of web and mobile apps in different industries and
+                verticals. Feel free to contact me here.
+              </p>
 
-            <a href="#contact" class="button">Contact</a>
+              <a href="#contact" class="button">Contact</a>
+            </section>
+
+            <section class="skills">
+              <h3>My Skills</h3>
+              <ul>
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">React</li>
+                <li class="skill">SASS</li>
+                <li class="skill">GIT</li>
+                <li class="skill">Shopify</li>
+                <li class="skill">Wordpress</li>
+                <li class="skill">Google ADS</li>
+                <li class="skill">Facebook ADS</li>
+                <li class="skill">Android</li>
+                <li class="skill">IOS</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects-content">
+          <section>
+            <h2>Projects</h2>
+            <div class="border"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate repudiandae aliquid quaerat animi, doloribus omnis eum
+              tenetur in eaque atque temporibus officiis! Natus non ipsa odio
+              error animi labore laudantium?
+            </p>
+          </section>
+
+          <section class="gallery-projects">
+            <div class="project">
+              <div class="img-container">
+                <img src="img/project.jpeg" alt="Imagem do projeto" />
+              </div>
+              <h3>Project 1</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                ipsa unde odit eum at consequuntur natus expedita qui repellat,
+                alias ratione maxime, ducimus laudantium, esse tempora non
+                asperiores placeat magni.
+              </p>
+              <a href="#" class="button">Case Study</a>
+            </div>
+            <div class="project">
+              <div class="img-container">
+                <img src="img/project.jpeg" alt="Imagem do projeto" />
+              </div>
+              <h3>Project 2</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                ipsa unde odit eum at consequuntur natus expedita qui repellat,
+                alias ratione maxime, ducimus laudantium, esse tempora non
+                asperiores placeat magni.
+              </p>
+              <a href="#" class="button">Case Study</a>
+            </div>
+            <div class="project">
+              <div class="img-container">
+                <img src="img/project.jpeg" alt="Imagem do projeto" />
+              </div>
+              <h3>Project 3</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                ipsa unde odit eum at consequuntur natus expedita qui repellat,
+                alias ratione maxime, ducimus laudantium, esse tempora non
+                asperiores placeat magni.
+              </p>
+              <a href="#" class="button">Case Study</a>
+            </div>
           </section>
         </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-content">
+          <section>
+            <h2>Contact</h2>
+            <div class="border"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate repudiandae aliquid quaerat animi, doloribus omnis eum
+              tenetur in eaque atque temporibus officiis! Natus non ipsa odio
+              error animi labore laudantium?
+            </p>
+          </section>
+
+          <form action="" class="contact-form">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter Yor Name">
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label> 
+              <input id="email" name="email" type="email" placeholder="Enter Yor Email">
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" placeholder="Enter Yor Message"></textarea>
+            </div>
+
+            <button class="button">Submit</button>
+          </form>
       </section>
     </main>
   </body>
