@@ -12,11 +12,17 @@ variável que respeitem os tipos identificados. Certifiquem-se de que os valores
     idade: Number,
     possuiDiploma: Boolean,
 */
+const pessoas = [];
 
 function cadastro(nome, salario, idade, possuiDiploma) {
-  return { nome, salario, idade, possuiDiploma };
+  const pessoa = { nome, salario, idade, possuiDiploma };
+  pessoas.push(pessoa);
+
+  return pessoas;
 }
 
-const pessoa = cadastro("Thallysson Silva", 1500.55, 21, false);
+cadastro("Thallysson Silva", 1500.55, 21, false);
+cadastro("João da Silva", 11600.55, 21, true);
+cadastro("Ruan José", 5500.55, 21, true);
 
-console.log(pessoa);
+console.log(pessoas);
