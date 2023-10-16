@@ -16,13 +16,18 @@ const pessoas = [];
 
 function cadastro(nome, salario, idade, possuiDiploma) {
   const pessoa = { nome, salario, idade, possuiDiploma };
-  pessoas.push(pessoa);
 
-  return pessoas;
+  typeof nome === "string" &&
+  typeof salario === "number" &&
+  typeof idade === "number" &&
+  typeof possuiDiploma === "boolean"
+    ? pessoas.push(pessoa)
+    : console.log("Cadastro Invalido");
 }
 
 cadastro("Thallysson Silva", 1500.55, 21, false);
 cadastro("João da Silva", 11600.55, 21, true);
 cadastro("Ruan José", 5500.55, 21, true);
+cadastro(2222, "rede", 21, "true");
 
 console.log(pessoas);
